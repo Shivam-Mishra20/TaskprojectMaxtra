@@ -20,7 +20,7 @@
         </a>
 
         <div class="flex">
-            <div class="hidden md:flex items-center space-x-6">
+            <div class="hidden lg:flex items-center space-x-6">
                 <div class="relative group">
                     <a href="#hero" class="text-gray-700 hover:text-gray-900">Custom</a>
                     <span class="ml-1"><i class="fa-solid fa-caret-down"></i></span>
@@ -58,20 +58,24 @@
 
 
     <!-- Hero Section -->
-    <div id="hero" class="relative min-h-screen overflow-hidden  bg-white">
+    <div id="hero" class="relative h-auto md:min-h-screen overflow-hidden bg-white">
         <!-- Blue wave background -->
-        <div class="relative   text-white  hidden   lg:block  bg-white h-screen rounded-lg overflow-hidden  ">
+        <div class="relative text-white hidden lg:block bg-white h-screen rounded-lg overflow-hidden">
             <div
                 class="absolute top-0 left-0 w-full h-full transform translate-x-4 -translate-y-8 rotate-12 bg-white rounded-full mix-blend-screen">
             </div>
-            <div class="absolute bg-white top-0 w-auto h-full">
-                <img src="/img/wave.jpg" alt="Custom apparel showcase" class="h-full    object-cover object-center">
-
+            <div class="absolute bg-white top-40 w-450px sm:w-auto h-auto">
+                <img src="/img/wave.png" alt="Custom apparel showcase" class="h-full object-cover object-center">
             </div>
             <div class="absolute left-20 bottom-2 px-8 py-4">
                 <h1 class="text-2xl font-bold mb-2">Custom & Sell</h1>
                 <p class="text-sm font-light mb-6 break-words">
-                    Customize your product and ship directly to your customer or to yourself
+                    Customize your product and ship
+                    <br>
+
+                    directly to your customer or to yourself
+
+
                 </p>
                 <div class="flex space-x-4">
                     <button
@@ -80,22 +84,28 @@
                         works?</button>
                 </div>
             </div>
-
         </div>
 
         <!-- Product showcase image -->
-        <div class="absolute right-0 top-10 h-full  w-full   lg:w-[46%] bg-white">
-
-            <img src="/img/image.png" alt="Custom apparel showcase" class="h-full   object-cover object-center">
+        <div class="  md:absolute right-0 top-0 md:top-28 h-screen w-auto mx-auto lg:w-[46%] bg-white">
+            <img src="/img/both.png" alt="Custom apparel showcase"
+                class="h-auto min-h-[100vh] w-full md:max-h-full lg:max-h-screen lg:w-auto object-cover object-center">
         </div>
     </div>
 
+
+
+
+
+
+
+
     <!-- cards section -->
-    <div id="outlet" class="min-h-auto bg-[#e6f3ff] py-16">
+    <div id="outlet" class=" min-h-auto  relative bg-[#e6f3ff] py-10">
 
 
 
-        <div class="container px-4 md:px-6">
+        <div class="container   px-4 md:px-6">
             <div class="text-center space-y-4 mb-12">
                 <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl">
                     Start your own brand in 5 steps
@@ -113,7 +123,8 @@
                             </div>
                             <h3 class="text-xl font-bold text-[#0096FF]">Customize</h3>
                             <p class="text-gray-600 text-sm">
-                                Apply designs to product by uploading designs, add text, shapes, switch within unlimited
+                                Apply designs to product by uploading designs, add text, shapes, switch within
+                                unlimited
                                 colors and fonts with live preview.
                             </p>
                         </div>
@@ -127,7 +138,8 @@
                             </div>
                             <h3 class="text-xl font-bold text-[#0096FF]">Save & Proceed</h3>
                             <p class="text-gray-600 text-sm">
-                                Save your product to reuse in future orders or edit design at any time. Then add to cart
+                                Save your product to reuse in future orders or edit design at any time. Then add to
+                                cart
                                 to continue
                                 with the order.
                             </p>
@@ -142,7 +154,8 @@
                             </div>
                             <h3 class="text-xl font-bold text-[#0096FF]">Checkout</h3>
                             <p class="text-gray-600 text-sm">
-                                Send to yourself or directly to your customers, set your own retail price and checkout.
+                                Send to yourself or directly to your customers, set your own retail price and
+                                checkout.
                             </p>
                         </div>
                     </div>
@@ -158,14 +171,30 @@
                     <i class="fas fa-chevron-right h-8 w-8"></i>
                     <span class="sr-only">Next step</span>
                 </button>
+
+
+
+
+
             </div>
 
+
+
+
         </div>
+
+        <div class="absolute right-4 mt-12    cursor-pointer scrollToTop">
+            <div class="py-2 px-3 bg-blue-400 text-white">
+                <i class="fa-solid fa-angles-up"></i>
+            </div>
+        </div>
+
+
     </div>
 
     <!-- about -->
 
-    <div id="services" class="container relative mx-auto px-4 py-12 md:py-24">
+    <div id="services" class="container relative mx-auto px-4 my-14 ">
         <div class="grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div class="space-y-6">
                 <div class="space-y-4">
@@ -203,6 +232,12 @@
                 <img src="img/aboutman.png" alt="Person wearing branded polo shirt" class="rounded-lg object-cover"
                     style="width: auto; height: 600px;" />
 
+
+            </div>
+            <div class=" absolute  right-4 bottom-4 cursor-pointer scrollToTop ">
+                <div class=" py-2 px-3 bg-blue-400 text-white ">
+                    <i class="fa-solid fa-angles-up"></i>
+                </div>
 
             </div>
         </div>
@@ -249,9 +284,31 @@
                     </div>
                 </div>
             </div>
+            <div class="absolute right-4 bottom-4 cursor-pointer scrollToTop">
+                <div class="py-2 px-3 bg-blue-400 text-white">
+                    <i class="fa-solid fa-angles-up"></i>
+                </div>
+            </div>
         </div>
 
+
     </div>
+
+
+
+    <script>
+        // JavaScript to handle scrolling
+        document.querySelectorAll(".scrollToTop").forEach((element) => {
+            element.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth", // Smooth scrolling
+                });
+            });
+        });
+    </script>
+
+
 
 </body>
 
